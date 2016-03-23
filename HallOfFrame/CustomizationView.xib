@@ -31,6 +31,7 @@
                     </state>
                     <connections>
                         <action selector="blueButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nc3-ry-7Hy"/>
+                        <action selector="onButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="2sQ-sf-wrc"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgR-DI-5t8">
@@ -42,6 +43,7 @@
                     </state>
                     <connections>
                         <action selector="greenButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="CKY-C0-cR6"/>
+                        <action selector="onButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Cc-n0-Oqh"/>
                     </connections>
                 </button>
             </subviews>

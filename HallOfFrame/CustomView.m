@@ -10,14 +10,7 @@
 
 @implementation CustomView
 
-- (IBAction)redButtonTapped:(UIButton *)sender {
-    [self.delegate pictureCollectionViewCell:self didTapButton:sender];
-}
-- (IBAction)blueButtonTapped:(UIButton *)sender {
-    [self.delegate pictureCollectionViewCell:self didTapButton:sender];
-    
-}
-- (IBAction)greenButtonTapped:(UIButton *)sender {
+- (IBAction)onButtonTapped:(UIButton *)sender {
     [self.delegate pictureCollectionViewCell:self didTapButton:sender];
 }
 

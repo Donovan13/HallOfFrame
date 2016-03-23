@@ -51,11 +51,17 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+//    PictureCollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    CustomView *view = [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+    view.delegate = self;
+//    CGPoint superCenter = CGPointMake(CGRectGetMidX([cell bounds]), CGRectGetMidY([cell bounds]));
+//    [cell setCenter:superCenter];
+    [self.view addSubview:view];
+    
 }
 
 -(void)pictureCollectionViewCell:(CustomView *)cell didTapButton:(UIButton *)button {
-    self.view.backgroundColor = button.backgroundColor;
+    
 }
 
 
