@@ -10,7 +10,9 @@
 
 @interface Picture : NSObject
 
-@property UIImage *picture;
+@property UIImage *image;
 @property UIColor *frameColor;
+
+-(instancetype) initWithImage:(UIImage *)image andColor:(UIColor *)color;
 
 @end

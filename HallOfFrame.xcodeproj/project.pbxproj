@@ -14,6 +14,7 @@
 		09B8DBC51CA31DAC00107692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B8DBC41CA31DAC00107692 /* Assets.xcassets */; };
 		09B8DBC81CA31DAC00107692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B8DBC61CA31DAC00107692 /* LaunchScreen.storyboard */; };
 		09B8DBD11CA325E500107692 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B8DBD01CA325E500107692 /* Picture.m */; };
+		251E206F1CA32D6500B0312E /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 251E206E1CA32D6500B0312E /* PictureCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		09B8DBC91CA31DAC00107692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09B8DBCF1CA325E500107692 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
 		09B8DBD01CA325E500107692 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		251E206D1CA32D6500B0312E /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewCell.h; sourceTree = "<group>"; };
+		251E206E1CA32D6500B0312E /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				09B8DBBC1CA31DAC00107692 /* AppDelegate.m */,
 				09B8DBBE1CA31DAC00107692 /* ViewController.h */,
 				09B8DBBF1CA31DAC00107692 /* ViewController.m */,
+				251E206D1CA32D6500B0312E /* PictureCollectionViewCell.h */,
+				251E206E1CA32D6500B0312E /* PictureCollectionViewCell.m */,
 				09B8DBCF1CA325E500107692 /* Picture.h */,
 				09B8DBD01CA325E500107692 /* Picture.m */,
 				09B8DBC11CA31DAC00107692 /* Main.storyboard */,
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B8DBD11CA325E500107692 /* Picture.m in Sources */,
+				251E206F1CA32D6500B0312E /* PictureCollectionViewCell.m in Sources */,
 				09B8DBC01CA31DAC00107692 /* ViewController.m in Sources */,
 				09B8DBBD1CA31DAC00107692 /* AppDelegate.m in Sources */,
 				09B8DBBA1CA31DAC00107692 /* main.m in Sources */,
