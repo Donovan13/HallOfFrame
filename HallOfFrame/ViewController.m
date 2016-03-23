@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "Picture.h"
 #import "PictureCollectionViewCell.h"
+#import "CustomView.h"
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate,PictureCollectionViewCellDelegate>
 @property NSMutableArray *animalImages;
 
 @end
@@ -48,6 +49,14 @@
     return cell;
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+}
+
+-(void)pictureCollectionViewCell:(CustomView *)cell didTapButton:(UIButton *)button {
+    self.view.backgroundColor = button.backgroundColor;
+}
 
 
 @end

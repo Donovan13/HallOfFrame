@@ -10,18 +10,15 @@
 
 @implementation CustomView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 - (IBAction)redButtonTapped:(UIButton *)sender {
+    [self.delegate pictureCollectionViewCell:self didTapButton:sender];
 }
 - (IBAction)blueButtonTapped:(UIButton *)sender {
+    [self.delegate pictureCollectionViewCell:self didTapButton:sender];
+    
 }
 - (IBAction)greenButtonTapped:(UIButton *)sender {
+    [self.delegate pictureCollectionViewCell:self didTapButton:sender];
 }
 
 
