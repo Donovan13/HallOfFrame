@@ -35,21 +35,52 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIJ-iI-hLW">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="33" y="20" width="328" height="225"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="225" id="SdO-2q-v3F"/>
+                                                        <constraint firstAttribute="width" constant="328" id="TOQ-Zd-Qa3"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="SdO-2q-v3F"/>
+                                                            <exclude reference="TOQ-Zd-Qa3"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="SdO-2q-v3F"/>
+                                                            <include reference="TOQ-Zd-Qa3"/>
+                                                        </mask>
                                                     </variation>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="oIJ-iI-hLW" secondAttribute="trailing" constant="33" id="AFp-YA-j2g"/>
+                                            <constraint firstAttribute="bottom" secondItem="oIJ-iI-hLW" secondAttribute="bottom" constant="20" id="LeY-OC-8ST"/>
+                                            <constraint firstItem="oIJ-iI-hLW" firstAttribute="top" secondItem="jEs-7m-hXp" secondAttribute="top" constant="20" id="uyx-vh-sEt"/>
+                                            <constraint firstItem="oIJ-iI-hLW" firstAttribute="leading" secondItem="jEs-7m-hXp" secondAttribute="leading" constant="33" id="vqu-m9-c0c"/>
+                                        </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
                                                 <exclude reference="oIJ-iI-hLW"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <exclude reference="AFp-YA-j2g"/>
+                                                <exclude reference="LeY-OC-8ST"/>
+                                                <exclude reference="uyx-vh-sEt"/>
+                                                <exclude reference="vqu-m9-c0c"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="subviews">
                                                 <include reference="oIJ-iI-hLW"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="AFp-YA-j2g"/>
+                                                <include reference="LeY-OC-8ST"/>
+                                                <include reference="uyx-vh-sEt"/>
+                                                <include reference="vqu-m9-c0c"/>
                                             </mask>
                                         </variation>
                                         <connections>
